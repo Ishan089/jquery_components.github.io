@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Jquery</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<!--stylesheet-->
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="container">
+	<div class="collapse">
+<a href="#" style="border-radius:5px;margin-left:20px;color:white" class="1">Collapseable_Button_#1</a>
+</div>
+
+	
+			<div class="accordin_1">
+				<p>
+				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				</p>
+			</div>
+		</br>
+		<div class="collapse2">
+<a class="2" href="#" style="margin-left:20px;border-radius:5px;color:white;">Collapseable_Button_#2</a>
+</div>
+	 
+			<div class="accordin_2">
+				<p>
+				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				</p>
+			</div>
+		</br>
+		<div class="collapse3">
+<a class="3" href="#" style="margin-left:20px;border-radius:5px;color:white">Collapseable_Button_#3</a>
+</div>
+	 
+			<div class="accordin_3">
+				<p>
+				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				</p>
+			</div>
+</div>
+</div>
+
+
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script>
+	$(document).ready(function(){
+
+			
+
+			$(".1").click(function(){
+				$(".accordin_2").hide()
+				$(".accordin_3").hide()
+
+				$('.accordin_1').slideToggle("slow");;
+				
+			})	
+
+			$(".2").click(function(){
+				$(".accordin_1").hide()
+				$(".accordin_3").hide()
+
+				$('.accordin_2').slideToggle();
+				
+			})	
+
+			$(".3").click(function(){
+				$(".accordin_1").hide()
+				$(".accordin_2").hide()
+
+				$('.accordin_3').slideToggle();
+				
+			})	
+
+})
+	</script>
+</body>
+</html>

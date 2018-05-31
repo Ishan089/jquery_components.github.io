@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>Navbar</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <!--stylesheet-->
+  <link rel="stylesheet" href="Navbar.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+  
+</head>
+
+<body>
+  <div class="container">
+      <div class="Navbar">
+      <ul>
+        <li class="BrandName"><a href="#"><b>Navbar</b></a></li>
+        <li id="threenav"><a href="#home">Home</a></li>
+        <li id="threenav"><a href="#news">News</a></li>
+        <li class="dropdown" id="threenav">
+           <a href="#" id="one" class="dropbtn">Dropdown<span><i class="fas fa-sort-down"></i></span></a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </li>
+        <li id="threenav"><a href="javascript:void(0)" style="color:lightgrey">Disabled</a></li>
+        <form>
+          <li id="threenav">
+            <input type="text" placeholder="Search" class="input1"></li>
+            <li id="threenav"><input type="submit" value="Search" class="input2"></li>
+          </form>
+        <li style="float:right" class="barIcon"><a href="#" class="3bar"><i class="fas fa-align-justify"></i></a>
+        </li>
+      </ul>
+      <div class="vertical_nav">
+        
+          <a href="#">Home</a>
+          <a href="#">News</a>
+          <a href="javascript:void(0)" style="color:lightgrey">Disabled</a>
+          <li class="dropdown1">
+            <a href="#" class="down">DropDown<i class="fas fa-sort-down"></i></a>
+            <div class="dropdown-contentt">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+          <form>
+            <input type="text" placeholder="Search" style="width:100%;height:auto;padding: 20px" >
+            <input type="submit" value="Search" id="search">
+          </form>
+        
+        
+      </div>
+    </div>
+  </div>
+      
+
+
+
+  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+
+      $(".3bar").click(function(){
+      $(".vertical_nav").slideToggle();
+      })
+
+      $("input").focus(function(){
+        $(this).addClass("colored-border")
+      })
+
+      $("input").focusout(function(){
+        $(this).removeClass("colored-border")
+      })
+
+      $("form").submit(()=>{
+        alert("Your form has been posted successfully")
+      })
+    })
+  </script>
+</body>
+</html>
+

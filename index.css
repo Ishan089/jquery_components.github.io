@@ -1,0 +1,36 @@
+.container{
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.link{
+	padding:3px 4px;
+	margin-left: 5vw;
+	height:50vh;
+	width: 80vw;
+	border-left: 5px solid tomato;
+	border-right: 5px solid indigo;
+	border-top: 5px dotted orange;
+	border-bottom: 5px dotted grey ;
+	border-radius: 5px
+}
+
+.heading{
+	color:olive;
+	margin-left: 15vw
+}
+.link a{
+	display: block;
+	text-decoration: none;
+	line-height: 15vh;
+	padding: 1px
+
+}
+
+.link div a{
+	height:10vh;
+	width:100%;
+	border: 1px solid white;
+	box-shadow:0px 3px 3px #aaaaaa ;
+
+}

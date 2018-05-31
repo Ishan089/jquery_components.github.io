@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title>Modal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<!--stylesheet-->
+	<link rel="stylesheet" href="modal.css">
+	
+</head>
+<body>
+
+	<div class="container"gkjdehgiuerhgiuhergberjghergh>
+
+		<button class="show">Show</button>
+
+			<div class="modal">
+
+				<div class="header">
+					<h2>Modal Title</h2>
+			        <button class="cancel" style="margin-left:80vw;margin-top:-60px;border-left:1px solid skyblue;border-bottom:1px solid skyblue"><span >&times</span></button>
+			     </div>
+				
+
+		<div class="body">
+			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsumloremlorem ipsumloremlorem lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.</p>
+		</div>
+			
+
+		<button class="save">Save</button>
+		
+		<button class="close" value="close">Close</button>
+	</div>
+</div>
+
+
+
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(()=>{
+
+		
+		$('.show').click(()=>{
+			
+			$('.modal').show();
+			$('body').addClass("overlay");
+		})
+
+		$('.cancel').click(()=>{
+			$('.modal').fadeOut();
+			$('body').removeClass("overlay")
+		})
+
+		$('.close').click(()=>{
+			$('.modal').fadeOut();
+			$('body').removeClass("overlay")
+		})
+
+		$(document).click((event)=> {
+  //if you click on anything except the modal itself or the "open modal" link, close the modal
+  		if (!$(event.target).closest(".container").length) {
+    	$(".modal").hide();
+    	$('body').removeClass("overlay")
+  	}
+  });
+})
+
+
+
+
+</script>
+</body>
